@@ -1,0 +1,386 @@
+.nav__ul{
+    background: #575454;/*color de la pantalla*/
+}
+h2{
+    text-align: center;
+    background-color: #c12700;
+    width: 150px;
+    height: 30px;
+    /*le movimos 20 px*/
+    position: relative;/*se sigue conservando el espacio */
+    top: 10px;/*arriba----se mueve 20 px hacia abajo*/
+    left: 10px;/*izquierda*/
+    right: 10px;/*derecha*/
+    bottom: 10px;/*abajo*/
+
+}
+.imagen-g{
+    background: #003dc1;/*color de la pantalla*/
+    height: 710px;/*arriba abajo*/
+    width: 1348px;/*izquierda derecha*/
+
+}
+/*es el logo en la parte superior izquierda*/
+.fuerza{
+    top: 0px;
+    left: 100px;
+    position: absolute;
+    height: 70px;
+    width: 140px;
+}
+
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.container{/*es la posicion de la caja padre es mas grande*/
+    /*margin: 50px auto; lo que hace es entrarlo*/
+    position: relative;
+    height: 1px;
+
+    left: 890px;/*posicion a la  derecha*/
+    top: 100px;
+}
+
+/*modificamos el titulo tamaño color etc*/
+.letra{
+    position: relative;
+    top: 110px;
+    left: 300px;
+    /*tamaño de letra*/
+    font-size: 50px;
+}
+.nombre{
+    position: relative;
+    left: 100px;
+    top: 60px;
+    color: rgb(24, 22, 22);/*color del texto*/
+}
+.apellido{
+    position: relative;
+    left: 100px;
+    top: 70px;
+    color: rgb(24, 22, 22);/*color del texto*/
+}
+
+.mail{
+    position: relative;
+    left: 100px;
+    top: 80px;
+    color: rgb(24, 22, 22);/*color del texto*/
+}
+.contraseña{
+    position: relative;
+    left: 100px;
+    top: 100px;
+    color: rgb(24, 22, 22);/*color del texto*/
+}
+.boton{
+    position: relative;
+    left: 165px;/*derecha izquierda*/
+    top: 130px;/*arriba abajo*/
+    
+    color: rgb(24, 22, 22);/*color del texto*/
+}
+
+/**+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.nav__ul{
+    padding-left: 320px;/*le da espacion a la derecha*/
+    
+}
+
+.sou{
+    padding-bottom: 30px;/*le da espacion a la derecha*/
+    
+}
+
+*{
+    
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comforter', cursive;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Corinthia', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Estonia', cursive;
+    font-family: 'Lora', serif;
+    
+}
+
+
+.nav__responsive-ul{/*esta funcion es para que elimine la funcionde html de icono 2*/
+    display: none;
+    
+}
+
+/*agregamos el fondo de color de las cajas nav*/
+.nav{
+    background: #48ee;
+}
+/*la funcion permite que se ponga una a lado de la otra*/
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+    color: #fff;/*se pone color blanco el icono*/
+}
+/*cuando se los pasemos por encima cambia*/
+.nav__li:hover > a{
+    color: #ccc;/*se pone color blanco el icono*/
+}
+/*doble modificacion*/
+.nav__li:hover{
+    color: #bbb;/*se pone color blanco el icono*/
+}
+/*es para colorear la letra*/
+.nav__li a{
+    color: #fff;
+    text-decoration: none;
+}
+/*es el espacio entre letra y contorno y alineamos el centro*/
+.nav__li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-left: 5px;
+}
+/*donde aparece*/
+.nav__responsive-buttom-container {
+    position: absolute;
+    width: 100%;
+    font-size: 130%;
+    background: rgb(73, 136, 231);
+    margin-top: -74px;/*es para no tapar lo del paddign*/
+}
+.nav__responsive-buttom {
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+@media only screen and (max-width:500px) {
+    .nav__ul{/*apartir de los 500 px cambia*/
+        display: none;
+    }
+    
+    /*es el estilo que lo creamos  es para crear lo de mobile*/
+    
+    /**/
+    .nav{
+        height: 37px;
+        width: 100%;
+        
+    }
+    /*para que se despligue y se actualice*/
+    .nav__li-container{
+        position: relative;
+        top: calc(100vh -64px);/*viewport heigth*/
+    }
+
+    /**/
+    .nav__responsive-ul{/*menu de escritorio y de menu de mobile*/
+        display: block;
+        position: absolute;/*es para que se ponga mas chico y vuele*/
+        background-color: #48e;
+        height: 100%;
+        width: 100%;
+        padding-top: 37px;
+        padding-top: 37px;
+        top: 100%;
+    }
+    
+    .nav__responsive-li{
+        width: 100%;
+        padding: 9px 20px;/*distancia de la letra*/
+        margin-top: 37px;
+
+    }
+
+    .nav__responsive-li i{
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 5px;
+    width: 30px;
+    color: #028;/*es la tipografia el color lo cambiamos a este*/
+    }
+    /*nav*/
+    .nav__responsive-li a{
+    color: #016;
+    text-decoration: none;
+    }
+/*es para crear que el menu se despliegue*/
+
+}
+
+
+
+
+
+
+
+.medios{
+    text-align: center;
+    position: relative;
+    top: 100px;/*arriba abajo*/
+    left: 45px;
+
+
+    /*es el tamaño de la caja*/
+    width: 670px;/*izquierda derecha de externo*/
+    height: 0px;/*arriba abajo--- la razon es que sea tipo transparente*/
+    font-size: 40px;/*es para crear agrandar la letra*/
+    color: white;
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*-------------medio de pagina en esta seccion--------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+.medio{
+    position: relative;
+    top: -5px;
+    bottom: 5px;
+    height: 600px;
+    background: black;
+    color: gray;
+}
+/*es la parte de la imagen ejecutiva para presentacion*/
+.imagen-p{
+    position: relative;
+    /*posicion*/
+    top: 80px;
+    right: -50px;
+    /*tamaño*/
+    width: 300px;
+    height: 500px;
+}
+/*es la parte del video de lapresentacion*/
+.video-p{
+    position: relative;
+    /*posicion*/
+    top: -400px;
+    right: -750px;
+    display: flex;/*nos ayuda a posicionar de mejor manera*/
+    /*tamaño*/
+    width: 500px;
+    height: 300px;
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*-------------pie de pagina en esta seccion----------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #003dc1;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;/*arriba y costado*/
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;/*ancho*/
+    height: 100%;/*alto*/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;/*ancho*/   
+}
+/*agregamos titulo y etc*/
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;/*color de letra*/
+    margin-bottom: 50px;/*espacio entre letra y h2*/
+    font-size: 25px;
+
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;/*color de letra*/
+    margin-bottom: 10px;
+}
+/*a partir de aqui se genera estilos de iconos*/
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;/*borramos el subarrayado de redes sociales que tenia antes*/
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background: #0d2d33;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.box1{
+    position: relative;
+    /*posicion*/
+    top: 10px;/*arriba abajo*/
+    right: 10px;
+}
+.box2{
+    position: relative;
+    /*posicion*/
+    top: 10px;/*arriba abajo*/
+    right: 230px;/*izquierda derecha*/
+}
+.box3{
+    position: absolute;
+    /*posicion*/
+    top: 50px;/*arriba abajo*/
+    right: 150px;/*izquierda derecha*/
+}
+
+
+
+
+/*pie de pagina cambia de color icono*/
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(0, 81, 255);
+}
+/*es el color de fondo de derechos reservados*/
+.pie-pagina .grupo-2{
+    background: #c10000;/*color de grupo dos*/
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    background: #c10000;
+}
+b{
+    background: #c10000;/*antes del arroba y numero*/
+}
+h2{
+    background: #003dc1;
+    /*#a02c68*/
+}
+.radio{
+    border-radius: 50%;
+}
+/*responsive para animacion*/
+@media screen and (max-width:800px){
+    /*este codigo lo copiamos desde grupo-1*/
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;/*arriba y costado*/
+    }
+}
+.pie-pagina{
+    top: -5px;
+    position: relative;
+}
