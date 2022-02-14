@@ -240,3 +240,127 @@ img{
     text-align: center;
     color: white;
 }
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*-------------pie de pagina en esta seccion----------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #003dc1;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1400px;
+    
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;/*arriba y costado*/
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;/*ancho*/
+    height: 100%;/*alto*/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;/*ancho*/   
+}
+/*agregamos titulo y etc*/
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;/*color de letra*/
+    margin-bottom: 50px;/*espacio entre letra y h2*/
+    font-size: 25px;
+
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;/*color de letra*/
+    margin-bottom: 10px;
+}
+/*a partir de aqui se genera estilos de iconos*/
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;/*borramos el subarrayado de redes sociales que tenia antes*/
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background: #0d2d33;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.box1{
+    position: relative;
+    /*posicion*/
+    top: 10px;/*arriba abajo*/
+    right: 10px;
+}
+.box2{
+    position: relative;
+    /*posicion*/
+    top: 10px;/*arriba abajo*/
+    right: 230px;/*izquierda derecha*/
+}
+.box3{
+    position: absolute;
+    /*posicion*/
+    top: 50px;/*arriba abajo*/
+    right: 150px;/*izquierda derecha*/
+}
+
+
+
+
+/*pie de pagina cambia de color icono*/
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(0, 81, 255);
+}
+/*es el color de fondo de derechos reservados*/
+.pie-pagina .grupo-2{
+    background: #c10000;/*color de grupo dos*/
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    background: #c10000;
+}
+b{
+    background: #c10000;/*antes del arroba y numero*/
+}
+h2{
+    background: #003dc1;
+    /*#a02c68*/
+}
+.radio{
+    border-radius: 50%;
+}
+/*responsive para animacion*/
+@media screen and (max-width:800px){
+    /*este codigo lo copiamos desde grupo-1*/
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;/*arriba y costado*/
+    }
+}
+.pie-pagina{
+    top: -5px;
+    position: relative;
+}
