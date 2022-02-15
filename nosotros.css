@@ -92,15 +92,8 @@ h2{
 }
 
 *{
-    
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Comforter', cursive;
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Corinthia', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Estonia', cursive;
-    font-family: 'Lora', serif;
-    
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -216,7 +209,7 @@ h2{
     height: 50px;
     width: 500px;
 }
-img{
+.hover1{
     height: 1100px;
     width: 1349px;/*lado*/
 }
