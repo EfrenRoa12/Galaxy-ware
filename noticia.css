@@ -1,3 +1,7 @@
+*{
+    font-family: 'Neonderthaw', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .nav__ul{
     background: #575454;/*color de la pantalla*/
 }
@@ -91,17 +95,7 @@ h2{
     
 }
 
-*{
-    
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Comforter', cursive;
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Corinthia', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Estonia', cursive;
-    font-family: 'Lora', serif;
-    
-}
+
 
 
 .nav__responsive-ul{/*esta funcion es para que elimine la funcionde html de icono 2*/
